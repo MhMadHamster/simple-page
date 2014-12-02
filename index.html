@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<title>Maket</title>
 </head>
 <body>
@@ -21,9 +22,9 @@
 
 			<!-- Navigation -->
 			<nav>
-				<a href="">label</a>
-				<a href="">label</a>
-				<a href="">label</a>
+				<a href="#promo">promo</a>
+				<a href="#about">about</a>
+				<a href="#team">team</a>
 				<a href="" class="button">sign in</a>
 			</nav>
 
@@ -36,7 +37,7 @@
 	<main>
 		
 		<!-- Promo -->
-		<section class="promo">
+		<section class="promo" id="promo">
 			<div class="wrapper promo-content">
 				<h2 class="promo-h2">Our mission</h2>
 				<p class="promo-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut expedita recusandae repellat harum pariatur fugiat. Quo neque harum nam doloribus.</p>
@@ -45,7 +46,7 @@
 		<!-- / Promo -->
 
 		<!-- About -->
-		<section class="about">
+		<section class="about" id="about">
 			<div class="wrapper about-content">
 				<h2 class="about-h2">About</h2>
 				<p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum, voluptatum iure reprehenderit quibusdam, incidunt voluptates dicta aut ullam ducimus nobis.</p>
@@ -54,7 +55,7 @@
 		<!-- / About -->
 
 		<!-- Team -->
-		<section class="team">
+		<section class="team" id="team">
 			<div class="wrapper team-content">
 				<h2 class="team-h2">Team</h2>
 				<div class="team-details">
@@ -114,5 +115,18 @@
 	</footer>
 	<!-- / Footer -->
 
+	<!-- Smooth Scrolling -->
+	<script>
+		$(document).ready(function(){
+			$('a[href^="#"], a[href^="."]').click( function() {
+				var scroll_el = $(this).attr('href');
+				if ($(scroll_el).length != 0) {
+					$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
+				}
+				return false;
+			});
+		});
+	</script>
+	<!-- / Smooth Scrolling -->
 </body>
 </html>

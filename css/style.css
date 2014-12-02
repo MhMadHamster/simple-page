@@ -1,4 +1,4 @@
-/*Global */
+/* Global */
 
 * {
 	-webkit-box-sizing: border-box;
@@ -13,10 +13,6 @@ body {
 a {
 	text-decoration: none;
 	text-transform: uppercase;
-}
-
-a:hover {
-	opacity: 0.7;
 }
 
 .wrapper {
@@ -42,6 +38,15 @@ header a {
 	font-weight: normal;
 }
 
+.logo a {
+	transition: all ease-in 0.3s;
+}
+
+.logo a:hover {
+	text-shadow: 2px 2px 1px #82868f;
+	transition: all ease-out 0.3s;
+}
+
 /* Navigation */
 nav {
 	display: inline-block;
@@ -52,14 +57,31 @@ nav {
 
 nav a {
 	font-size: 14px;
-	margin-left: 25px;
+	padding: 0 12.5px;
+	transition: all ease-in 0.3s;
+}
+
+nav a:hover {
+	text-shadow: 1px 1px 0px #82868f;
+	transition: all ease-out 0.3s;
 }
 
 .button {
 	background-color: #0ebfdd;
 	border-radius: 25px;
+	border: 1px solid rgba(255,255,255,.0);
 	color: #fff;
+	margin-left: 12.5px;
 	padding: 10px 35px;
+	transition: all ease-in 0.3s;
+}
+
+.button:hover {
+	background-color: #fff;
+	border: 1px solid #0ebfdd;
+	color: #0ebfdd;
+	text-shadow: 0 0 0 #fff;
+	transition: all ease-out 0.3s;
 }
 
 /* / Header */
@@ -150,7 +172,7 @@ nav a {
 }
 
 .team-details {
-	display: inline-block;
+	margin: 0 auto;
 	width: 620px;
 	padding-top: 85px;
 }
@@ -184,13 +206,12 @@ nav a {
 
 .button-team {
 	margin: 100px auto 0;
-	display: block;
-	width: 180px;
+	display: inline-block;
 	background-color: #0ebfdd;
 	border-radius: 25px;
 	color: #fff;
 	font-size: 14px;
-	padding: 12px;
+	padding: 12px 35px;
 	border: 1px solid #fff;
 }
 /* / Team */
@@ -222,8 +243,12 @@ footer nav {
 footer nav a {
 	font-size: 12px;
 	color: #d7dee4;
-	padding-right: 30px;
+	padding: 0 15px;
 	margin-left: 0;
+}
+
+footer nav a:first-child {
+	padding-left: 0;
 }
 /* / Navigation */
 
@@ -244,6 +269,12 @@ footer nav a {
 	padding: 15px;
 	background-image: url(../img/icon-social-sprite.png);
 	margin-left: 10px;
+	transition: all ease-in 0.3s;
+}
+
+.social a:hover {
+	opacity: 0.5;
+	transition: all ease-out 0.3s;
 }
 
 .mail { background-position: -2px 0px; }
@@ -269,6 +300,12 @@ footer nav a {
 	color: #73767a;
 	padding: 0 10px;
 	border-right: 2px solid #73767a;
+	transition: all ease-in 0.3s;
+}
+
+.copyright a:hover {
+	color: #d7dee4;
+	transition: all ease-out 0.3s;
 }
 
 .copyright a:last-child { border-right: 0; }
