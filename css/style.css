@@ -8,11 +8,17 @@
 
 body {
 	font-weight: bold;
+	margin: 0;
+	padding: 0;
 }
 
 a {
 	text-decoration: none;
 	text-transform: uppercase;
+}
+
+a, a:hover, a:focus, a:active {
+	outline: none;
 }
 
 .wrapper {
@@ -83,13 +89,13 @@ nav a:hover {
 /* Promo */
 .promo {
 	background: url(../img/bg-promo.jpg) no-repeat center;
-	height: 600px;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 
 .promo-content {
 	text-align: center;
+	padding-bottom: 65px;
 }
 
 /* Promo header */
@@ -132,8 +138,8 @@ nav a:hover {
 
 /* About */
 .about {
-	height: 250px;
 	text-align: center;
+	padding-bottom: 35px;
 }
 
 .about-h2 {
@@ -155,7 +161,6 @@ nav a:hover {
 /* Team */
 .team {
 	background-color: #0ebfdd;
-	height: 600px;
 	text-align: center;
 }
 
@@ -167,8 +172,9 @@ nav a:hover {
 }
 
 .team-details {
+	display: block;
 	margin: 85px auto 0;
-	width: 620px;}
+}
 
 .item {
 	display: inline-block;
@@ -196,11 +202,8 @@ nav a:hover {
 }
 
 .button-team {
-	margin: 100px auto 0;
+	margin: 100px auto 72px;
 	display: inline-block;
-	/*background-color: #0ebfdd;*/
-	/*border-radius: 25px;*/
-	/*color: #fff;*/
 	font-size: 14px;
 	padding: 12px 35px;
 	border: 1px solid #fff;
@@ -221,7 +224,6 @@ nav a:hover {
 
 /* Footer */
 footer {
-	height: 130px;
 	background-color: #45494d;
 	padding-top: 20px;
 }
